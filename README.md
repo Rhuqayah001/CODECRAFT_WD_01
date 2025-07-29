@@ -19,7 +19,7 @@ A responsive landing page for **CodeVerse**, a fictional tech community built wi
 
 ![CodeVerse Landing Page](./Screenshot%20of%20CodeVerse%20Website.png/screenshot.png)
 
-[Live Demo](https://your-site.netlify.app)
+[Live Demo](codecraft-wd-01-bice.vercel.app)
 
 ## 📂 Folder Structure
 
