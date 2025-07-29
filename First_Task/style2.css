@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Segoe UI', sans-serif; 
+   background-color: white;  
+}
+
+.btn{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   padding: 0.7rem 1.5rem;
+   border-radius: 4px;
+   border: none;
+   transition: transform 0.3s ease, background 0.3s ease;
+
+}
+
+.menu-toggle {
+  border: none;
+  color: white; 
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-toggle:hover, .menu-toggle:visited{
+    font-size: 2.3rem;
+    width: 55px;
+    border: 3px solid white;
+    border-radius: 16px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+.nav-links a{
+   color: white;
+   text-decoration: none;
+}
+.nav-links a:hover{
+    font-size: 1.3rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: block;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+   .nav-links.open {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+}
+
+
+/* -----HERO SECTION----- */
+#hero-section{
+    height: 100vh;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 20px;
+}
+
+.hero-section h1{
+    font-size: 3rem;
+}
+
+.hero-section p{
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+.hero-btn{
+    background-color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.hero-btn:hover, .hero-btn:visited{
+    transform: scale(1.05); 
+    background-color: #e8eaf6;
+}
+
+
+/* FEATURES */
+#features{
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+.features-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.features-card{
+    background-color: #f1f1f1;
+    padding: 1.2rem;
+    border-radius: 16px;
+    transition: transform 0.3s;
+    line-height: 1.5;  
+}
+.features-card:hover {
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px){
+    .features-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* COMMUNITY SECTION */
+#community{
+    padding: 4rem 2rem;
+    background: #e8eaf6;
+    text-align: center;
+}
+.quote{
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+.community-btn{
+    background-color: #1f1c2c;
+    color: white;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.community-btn:hover, .community-btn:visited {
+  transform: scale(1.05);
+  background: #4b4966;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px){
+    .stats{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+/* CONTACT SECTION */
+#contact{
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+.contact h2, .contact p{
+    margin-bottom: 1.5rem;
+
+}
+.contact form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.contact input, .contact textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+}
+.contact button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background: #1f1c2c;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.contact button:hover, .contact button:visited {
+  background: #4b4966;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f1f1f1;
+  font-size: 1rem;
+}

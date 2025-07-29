@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Code Verse</title>
+</head>
+<body>
+    <!-- ----- NAVIGATION BAR ----- -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CodeVerse</div>
+            <button class="menu-toggle" id="menu-toggle">
+             ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="./index2.html">Home</a></li>
+                <li><a href="#hero-section">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+     <section id="hero-section" class="hero-section">
+        <div>
+            <h1>Welcome to CodeVerse</h1>
+            <p>A space where developers <strong>Build</strong>, <strong>Learn</strong>, and <strong>Grow</strong> together.</p>
+            <a href="#" class="btn hero-btn">Join the Community</a>
+        </div>
+     </section>
+
+    <!-- FEATURES SECTION -->
+     <section id="features">
+        <h1>What We Offer</h1>
+        <div class="features-list">
+           <div class="features-card">
+                <h3>💡 Daily Challenges</h3>
+                <p>Sharpen your skills with bite-sized problems designed to improve consistency.</p>
+           </div>
+           <div class="features-card">
+                <h3>🤝 Team Projects</h3>
+                <p>Collaborate with other devs and contribute to meaningful open-source builds.</p>
+           </div>
+           <div class="features-card">
+                <h3>📚 Resources</h3>
+                <p>Explore curated content — from tutorials to docs — all in one place.</p>
+           </div>
+           <div class="features-card">
+                <h3>🌍 Global Community</h3>
+                <p>Connect, discuss, and grow with devs from over 20+ countries.</p>
+           </div>
+        </div>
+        
+     </section>
+
+    
+    <!-- COOMUNITY SECTION -->
+     <section id="community">
+        <h2>Our Community</h2>
+        <p class="quote">"CodeVerse helped me go from beginner to confident developer in just 3 months!" <br> – Jane Doe</p>
+        <div class="stats">
+            <div>👨🏽‍💻 <strong>5,000+</strong> developers</div>
+            <div>🌐 <strong>20+</strong> countries</div>
+            <div>💬 <strong>100+</strong> weekly discussions</div>
+        </div>
+        <a href="#" class="btn community-btn">Join Now</a>
+     </section>
+
+    <!-- CONTACT SECTION -->
+     <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Got questions? Want to collaborate or just say hi? Drop us a message!</p>
+
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea name="message" id="" placeholder="Your Message" rows="5" required></textarea>
+            <button>Submit</button>
+        </form>
+     </section>
+
+    <!-- FOOTER -->
+     <footer>
+        <p>&copy; CodeVerse, All rights reserved.</p>
+     </footer>
+
+
+
+    <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navigation = document.getElementById("navbar");
+
+        toggleBtn.addEventListener("click", () => {
+            navigation.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
